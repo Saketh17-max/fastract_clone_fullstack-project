@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASTRACK</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="icon" href="images/toplogo.png">
+</head>
+<body>
+    <nav>
+        <ul class="first">
+            <i id="menu_logo" class="ri-menu-line" onclick="menuOpen()"></i>
+            <img id="logo" src="images/logo.png" alt="LOGO">
+        </ul>
+        <ul class="menu">
+            <li><a onclick="sectionToScroll('home')">HOME</a></li>
+            <li><a onclick="sectionToScroll('trending')">TRENDING</a></li>
+            <li><a onclick="sectionToScroll('shop')">SHOP</a></li>
+            <li><a onclick="sectionToScroll('sale')">SALE</a></li>
+            <li><a onclick="sectionToScroll('gifting')">GIFTING</a></li>
+            <li><a onclick="sectionToScroll('more')">MORE</a></li>
+        </ul>
+        <ul class="hello">
+            <i class="ri-search-line"></i>
+            <i class="ri-user-3-line"></i>
+            <i class="ri-heart-line"></i>
+            <i class="ri-shopping-bag-line"></i>
+        </ul>
+    </nav>
+    <div class="open" id="open">
+        <i id="menu_close" class="ri-close-large-line" onclick="menuclose()"></i>
+        <li><a onclick="sectionToScroll('home'),menuclose()">HOME</a></li>
+        <li><a onclick="sectionToScroll('trending'),menuclose()">TRENDING</a></li>
+        <li><a onclick="sectionToScroll('shop'),menuclose()">SHOP</a></li>
+        <li><a onclick="sectionToScroll('sale'),menuclose()">SALE</a></li>
+        <li><a onclick="sectionToScroll('gifting'),menuclose()">GIFTING</a></li>
+        <li><a onclick="sectionToScroll('more'),menuclose()">MORE</a></li>
+    </div>
+    <location id="home">
+        <i class="ri-map-pin-line"></i>
+        <p>Select a location to check product availability</p>
+        <a href="#">Add Location</a>
+    </location>
+    <img class="main_img" src="images/main.jpg" alt="">
+    <div class="categories">
+        <img src="images/img1.webp" alt="">
+        <img src="images/img2.webp" alt="">
+        <img src="images/img3.jpg" alt="">
+        <img src="images/img4.webp" alt="">
+    </div>
+    <img class="row" src="images/row_img.webp" alt="">
+    <img class="row1"  src="images/row_img1.jpg" alt="">
+    
+    <p class="trend" id="trending">TRENDING</p>
+    <div class="categorie">
+        <div class="t1">
+            <img src="images/trending1.webp" alt="">
+            <div class="data">
+                <a> <b>Fastrack Groove Quartz Analog with Date</b></a>
+                <p>Girls Watches</p><br>
+                <p class="price">₹3995</p>
+            </div>
+        </div>
+        <div class="t2">
+            <img src="images/trending4.webp" alt="">
+            <div class="data">
+                <a ><b>Fastrack Groove Multifunction Black Strap </b></a>
+                <p>Boys Watches</p><br>
+                <p class="price">₹5795</p>
+            </div>
+        </div>
+        <div class="t3">
+            <img src="images/trending3.webp" alt="">
+            <div class="data">
+                <a><b>Fastrack Groove Multifunction Metal Dial</b></a>
+                <p>Boys Watches</p><br>
+                <p class="price">₹5395</p>
+            </div>
+        </div>
+        <div class="t4">
+            <img src="images/trending2.jpg" alt="">
+            <div class="data">
+                <a><b>Fastrack Groove Multifunction Black Metal</b></a>
+                <p id="shop">Guys Watches</p><br>
+                <p class="price" >₹5795</p>
+            </div>
+        </div>
+    </div>
+    <p class="trend1" >SHOP YOUR VIBE</p> 
+    <div class="three">
+        <img src="images/shop1.webp" alt="">
+        <img src="images/shop2.webp" alt="">
+        <img  src="images/shop3.webp"  alt="">
+    </div>
+    
+    <p class="trend1" id="sale">BESTSELLERS</p>        
+    <div class="categorie">
+        <div class="t1">
+            <img src="images/best1.webp" alt="">
+            <div class="data">
+                <a> <b>Fastrack Groove Quartz Analog with Date</b></a>
+                <p>Girls Watches</p><br>
+                <p class="price">₹3995</p>
+            </div>
+        </div>
+        <div class="t2">
+            <img src="images/best2.webp" alt="">
+            <div class="data">
+                <a ><b>Fastrack Groove Multifunction Black Strap </b></a>
+                <p>Boys Watches</p><br>
+                <p class="price">₹5795</p>
+            </div>
+        </div>
+        <div class="t3">
+            <img src="images/best3.webp" alt="">
+            <div class="data">
+                <a><b>Fastrack Groove Multifunction Metal Dial</b></a>
+                <p>Boys Watches</p><br>
+                <p class="price">₹5395</p>
+            </div>
+        </div>
+        <div class="t4">
+            <img src="images/best4.webp" alt="">
+            <div class="data">
+                <a><b>Fastrack Groove Multifunction Black Metal</b></a>
+                <p>Guys Watches</p><br>
+                <p class="price">₹5795</p>
+            </div>
+        </div>
+    </div>
+    <div class="watch_data" id="gifting">
+        <div class="left">
+            <img src="images/watch.webp" alt="">
+            <a><b>CERAME</b></a><br>
+            <p>Fastrack's pioneering ceremic collection.Experience the modern richness of ceramic bezels and straps,paired with stainless steel and multifunctional design for a superior statement in contemporary style.</p>
+        </div>
+        <div class="right">
+            <img src="images/featured.jpg" alt="">
+        </div>
+    </div>
+    <footer id="more">
+        <div class="f11">
+            <div class="f111">
+                <img src="images/Secure.svg" alt="">
+                <a>
+                    <p>SAFE AND SECURE</p>
+                    <p>CHECKOUT</p>
+                </a>
+            </div>
+            <div class="f112">
+                <img src="images/7 Day returnD.svg" alt="">
+                <a>
+                    <p>7 DAY</p>
+                    <p>RETURN</p>
+                </a>
+            </div>
+        </div>
+        <div class="f12">
+            <div class="f121">
+                <img src="images/QualityD.svg" alt="">
+                <a>
+                    <p>PREMIUM QUALITY</p>
+                    <p>PRODUCTS</p>
+                </a>
+            </div>
+            <div class="f122">
+                <img src="images/shippingD.svg" alt="">
+                <a>
+                    <p>FREE SHIPPING</p>
+                    <p>NATIONWIDE</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom">
+        <div class="b1">
+            <img class="logo" src="images/f_logo.svg" alt="">
+            <div class="media">
+                <img src="images/fb.svg" alt="">
+                <img src="images/Xtwitter.svg" alt="">
+                <img src="images/insta.svg" alt="">
+                <img src="images/youtube.svg" alt="">
+                <img src="images/PrinterstM.svg" alt="">
+            </div>
+        </div>
+        <div class="b2">
+            <div class="services">
+                <div class="ser1">
+                    <h5>CUSTOMER SERVICE</h5>
+                    <ul>
+                        <li>Payment Options</li>
+                        <li>Track Order</li>
+                        <li>Find a Store</li>
+                        <li>Encircle Program</li>
+                    </ul>
+                </div>
+                <div class="ser2">
+                    <h5>POLICIES</h5>
+                    <ul>
+                        <li>Brand Protection</li>
+                        <li>Cancellation</li>
+                        <li>Shipping</li>
+                        <li>Warranty Policies
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ser3">
+                <h5>CONTACT US</h5>
+                <ul>
+                    <li>1800-266-0123</li>
+                    <li>customercare@titan.co.in</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+        </div>
+        <div class="b3">
+            <div class="b31">
+                <h5>ABOUT FASTRACK</h5>
+                <ul>
+                    <li>About Us</li>
+                    <li>Help & Contact</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="b32">
+                <h5>DOWNLOAD THE TITAN APP</h5>
+                <div class="apps">
+                    <img src="images/appstore.svg" alt="">
+                    <img src="images/googleplay.svg" alt="">
+                </div>
+            </div>
+            <div class="b33">
+                <p>NEED HELP?</p>
+                <p>Chat with us on <a href="#">WhatsApp</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="name">
+        <p>@ DESIGNED BY SAI  PRASANTH</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
